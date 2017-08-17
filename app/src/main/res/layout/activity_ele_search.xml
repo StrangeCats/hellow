@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ele_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.myapplication.activity.EleSearchActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:background="#ADE0D9"
+        android:id="@+id/frame_bg"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_gravity="center|left"
+            android:src="@drawable/arrow_right"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_search_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ele_search_bg"
+            android:gravity="center"
+            android:hint="输入搜索内容"
+            android:padding="10dp" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+             />
+
+        <TextView
+            android:layout_marginRight="5dp"
+            android:id="@+id/tv_search"
+            android:textColor="#fff"
+            android:layout_gravity="center|right"
+            android:text="搜索"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/frame_content_bg"
+        android:background="#C9D9D6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.donkingliang.labels.LabelsView
+            android:layout_margin="30dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/labels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:labelBackground="@drawable/yuanbiankuang_red"
+            app:labelTextColor="#fb435b"
+            app:labelTextSize="14sp"
+            app:labelTextPaddingBottom="5dp"
+            app:labelTextPaddingLeft="10dp"
+            app:labelTextPaddingRight="10dp"
+            app:labelTextPaddingTop="5dp"
+            app:lineMargin="10dp"
+            app:wordMargin="10dp" />  //标签与标签的距离
+    </FrameLayout>
+</LinearLayout>

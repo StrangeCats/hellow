@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5DED8"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ADE0D9"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/tv_search_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ele_search_bg"
+            android:gravity="center"
+            android:hint="搜索商家、商品名称"
+            android:padding="10dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="豆腐  螺蛳粉  火锅  巴掌  麦当劳  冒菜  臭豆腐  云吞面  "
+            android:textColor="#9E937D" />
+    </FrameLayout>
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rl_modulename_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <!-- 内容控件 -->
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="#00000000"
+            android:dividerHeight="0dip"></ListView>
+
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+</LinearLayout>

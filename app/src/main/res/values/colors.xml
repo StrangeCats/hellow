@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="my_black">#3E3E3E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="touming">#00FF4081</color>
+    <!-- 灰色 -->
+    <color name="huise">#919191</color>
+    <!-- 橘红 -->
+    <color name="juhong">#F4B454</color>
+    <!--青绿-->
+    <color name="qinglv">#D9E3DA</color>
+</resources>
